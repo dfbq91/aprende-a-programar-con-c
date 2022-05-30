@@ -43,7 +43,4 @@ int main() {
     printf("My string my_str3 is %s\n\n", my_str3);
     modify_string(my_str3);
     printf("My modified string my_str3 is %s\n\n", my_str3);
-
-
-
 }
