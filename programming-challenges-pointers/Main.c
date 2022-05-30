@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "utilities.h"
+#include <string.h>
 
 /**
  * Pointers everywhere
@@ -24,6 +25,19 @@ int main() {
 
     printf("Concatenated strings: %s\n", _strcat(s5, s6));
     printf("Concatenated strings: %s\n", _strcat(s5, s4));
+
+    printf("String before being copied %s\n", s2);
+    printf("Copied string: %s\n", _strcpy(s2, s3));
+    printf("Copied string: %s\n", _strcpy(s2, ""));
+    printf("Copied string: %s\n", _strcpy(NULL, ""));
+
+    printf("Compared strings: %i\n", _strcmp("", " "));
+    printf("Compared strings: %i\n", _strcmp("A", "A"));
+    printf("Compared strings: %i\n", _strcmp("", "\0"));
+    printf("Compared strings: %i\n", _strcmp("\0", "a"));
+    printf("Compared strings: %i\n", _strcmp("foobar\0b", "foobar\0a"));
+    printf("Compared strings: %i\n", _strcmp("■", "!"));
+    
 
     return 0;
 }
