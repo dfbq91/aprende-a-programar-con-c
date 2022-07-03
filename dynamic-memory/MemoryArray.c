@@ -11,5 +11,6 @@ int main() {
     ptr[1] = 'E';
     ptr[2] = 'L';
     printf("First letter: %c\nSecond Letter: %c\nThird letter: %c\n", ptr[0], ptr[1], ptr[2]);
+    free(ptr);
     return 0;
 }
