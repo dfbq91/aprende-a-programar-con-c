@@ -13,7 +13,7 @@ int main() {
     char chr;
     char buff[SIZE];
 
-    fptr = fopen("./file-to-read.txs", "r");
+    fptr = fopen("./file-to-read.txt", "r");
     if (fptr == NULL) {
         fprintf(stderr, "Can not read the file\n");
         exit(EXIT_FAILURE); // return 1;
